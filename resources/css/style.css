@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v7/y6oxFxU60dYw9khW6q8jGw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Jura Bold'), local('Jura-Bold'), url(https://fonts.gstatic.com/s/jura/v9/rjYXrqsqAlKenmAdHHYptw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Syncopate';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Syncopate Bold'), local('Syncopate-Bold'), url(https://fonts.gstatic.com/s/syncopate/v9/S5z8ixiOoC4WJ1im6jAlYOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+body {
+    font-size: 16px;
+}
+
+.introhalf1 {
+    background-image: url(../images/londoneye-half1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.introhalf2 {
+    background-image: url(../images/londoneye-half2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.fullscreen {
+    width: 200%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen h1 {
+    font-size: 6rem;
+    font-family: 'Monoton';
+    color: #54CC14;
+    z-index: 1;
+    position: relative;
+    text-shadow: 0 0 20px black;
+    margin: 2rem 0;
+}
+
+.fullscreen h2 {
+    font-size: 3rem;
+    font-family: 'Open Sans';
+    color: #A1E30B;
+    background-image: linear-gradient(45deg, #A1E30B, #D9D60A);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    z-index: 1;
+    position: relative;
+    text-shadow: 0 0 50px black;
+    animation: hue 10s infinite linear, neon 1.5s infinite alternate;
+    transition: all 500ms ease-out 300ms;
+    cursor: pointer;
+}
+
+.fullscreen h2:hover {
+    animation: hue 10s infinite linear;
+    text-shadow: 0 0 100px black;
+}
+
+@keyframes hue {
+    0% {filter: hue-rotate(0);}
+    100% {filter: hue-rotate(360deg);}
+}
+
+@keyframes neon {
+    from {
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #fff, 0 0 10px #A1E30B, 0 0 17.5px #A1E30B, 0 0 20px #A1E30B, 0 0 25px #A1E30B, 0 0 37.5px #A1E30B;
+  }
+  to {
+    text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 3.75px #fff, 0 0 5px #A1E30B, 0 0 8.75px #A1E30B, 0 0 10px #A1E30B, 0 0 12.5px #A1E30B, 0 0 18.75px #A1E30B;
+  }
+}
+
+/* PAGE 2 SKILLS */
+.skillshalf1 {
+/*    background-color: #5AD0FF;*/
+    background-image: url(../images/skills-bghalf1.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillshalf2 {
+/*    background-color: #5AD0FF;*/
+    background-image: url(../images/skills-bghalf2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.desktop {
+    color: white;
+    font-size: 20rem;
+}
+
+.skills-section-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*    position: relative;*/
+    height: 100%;
+    width: 100%;
+}
+
+/*
+.skills-section-left h2 {
+    color: white;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 7rem;
+    position: absolute;
+    left: 2.2rem;
+}
+*/
+
+.skills-section-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.skill-icon {
+    height: 20%;
+    width: 15%;
+/*    margin: 2rem;*/
+    position: relative;
+}
+
+.skill-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.HTML5 {
+    bottom: 8rem;
+}
+
+.CSS3 {
+    bottom: 8rem;
+    left: 2rem;
+}
+
+.cSharp {
+    bottom: 8rem;
+    left: 14rem;
+}
+
+.JS {
+  top: 3rem;
+  right: 10.5rem;
+}
+
+.aspNET {
+/*    width: 30%;*/
+    height: 15%;
+    width: 20%;
+    top: 3.2rem;
+    right: 1rem;
+}
+
+.SQL {
+/*
+    width: 25%;
+    height: 25%;
+*/
+    height: 17%;
+    width: 20%;
+    top: 3rem;
+    left: 1rem;
+}
+
+.portfoliohalf1 {
+    background-image: url(../images/portfolio-bg-alt-half1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfoliohalf2 {
+    background-image: url(../images/portfolio-bg-alt-half2.jpg);
+    background-size: cover;
+    background-position: center;
+}
